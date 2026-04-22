@@ -1,0 +1,31 @@
+{
+  "canonical_name": "GRC Analyst",
+  "family": "grc",
+  "description": "Governance, Risk, and Compliance analyst. Manages policy frameworks, risk registers, audit preparation, and regulatory compliance programmes.",
+  "task_routineness_score": 62,
+  "data_dependency_score": 58,
+  "judgment_intensity_score": 50,
+  "social_adversarial_score": 42,
+  "tool_augmentation_ceiling_score": 65,
+  "high_risk_tasks": [
+    "Control evidence collection",
+    "Gap analysis against frameworks (ISO 27001, NIST, SOC 2)",
+    "Risk register maintenance",
+    "Policy document drafting from templates",
+    "Compliance checklist completion"
+  ],
+  "low_risk_tasks": [
+    "Regulatory interpretation for novel scenarios",
+    "Risk acceptance decision facilitation",
+    "Audit relationship management",
+    "Third-party risk assessment (complex suppliers)"
+  ],
+  "recommended_skills": [
+    "AI and data governance frameworks",
+    "Privacy regulations (GDPR, PDPA, POPIA)",
+    "Cloud compliance (FedRAMP, CSA CCM)",
+    "Quantitative risk modelling (FAIR)",
+    "Third-party and supply chain risk management"
+  ],
+  "specialisations": ["financial_services", "healthcare", "government"]
+}

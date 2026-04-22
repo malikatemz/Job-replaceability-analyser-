@@ -1,0 +1,51 @@
+# config/settings.yaml
+# Job Replaceability Analyser — primary configuration
+# All values here are defaults; override via environment variables or a
+# settings.local.yaml file (gitignored) for per-environment tuning.
+
+scoring:
+  model_version: "2.1"
+
+  # Weights must sum to 1.0
+  dimension_weights:
+    task_routineness:             0.20
+    data_dependency:              0.20
+    judgment_intensity:           0.25
+    social_adversarial_complexity: 0.20
+    tool_augmentation_ceiling:    0.15
+
+  # Multipliers applied after dimension weighting.
+  # > 1.0 = sector accelerates AI adoption / automation pressure
+  # < 1.0 = sector has structural / regulatory friction slowing displacement
+  sector_modifiers:
+    financial_services: 1.05
+    government:         0.90
+    healthcare:         0.95
+    technology:         1.10
+    defence:            0.85
+    energy:             0.92
+    general:            1.00
+
+projection:
+  # Annual compound growth rate of AI capability affecting cybersecurity tasks.
+  # 0.18 = 18% per year (conservative estimate for 2025-2030 horizon).
+  ai_capability_growth_rate: 0.18
+
+  # Years before the growth rate takes full effect (technology + procurement lag).
+  adoption_lag_years: 1.5
+
+reporting:
+  default_format: "json"       # json | pdf | markdown
+  include_reasoning: true      # Include per-dimension reasoning strings in output
+  pdf_template: "standard"     # standard | executive | detailed
+
+api:
+  max_team_size: 200
+  rate_limit_per_minute: 60    # Requests per API key per minute
+  cors_origins:                # Allowed CORS origins (use ["*"] for open dev)
+    - "http://localhost:3000"
+    - "http://localhost:5173"
+
+logging:
+  level: "INFO"
+  format: "json"               # json | text

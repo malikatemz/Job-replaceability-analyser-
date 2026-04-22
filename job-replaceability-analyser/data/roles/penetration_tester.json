@@ -1,0 +1,42 @@
+{
+  "canonical_name": "Penetration Tester",
+  "family": "red_team",
+  "description": "Conducts authorised offensive security assessments against networks, applications, and cloud environments to identify exploitable vulnerabilities.",
+  "task_routineness_score": 30,
+  "data_dependency_score": 40,
+  "judgment_intensity_score": 72,
+  "social_adversarial_score": 68,
+  "tool_augmentation_ceiling_score": 42,
+  "high_risk_tasks": [
+    "Automated vulnerability scanning",
+    "Standard report generation",
+    "CVE lookup and impact classification",
+    "Recon and OSINT aggregation"
+  ],
+  "low_risk_tasks": [
+    "Novel exploit development",
+    "Custom payload crafting",
+    "Logical chaining of low-severity findings",
+    "Client scoping and rules of engagement negotiation",
+    "Social engineering campaigns"
+  ],
+  "recommended_skills": [
+    "Adversarial AI and LLM attack surfaces",
+    "Cloud-native offensive techniques (AWS/GCP/Azure)",
+    "OT/ICS penetration testing",
+    "Red team leadership and programme management",
+    "Secure code review"
+  ],
+  "specialisations": ["web", "network", "cloud", "mobile", "ot"],
+  "specialisation_overrides": {
+    "cloud": {
+      "task_routineness_score": 35,
+      "tool_augmentation_ceiling_score": 50
+    },
+    "ot": {
+      "task_routineness_score": 22,
+      "judgment_intensity_score": 80,
+      "tool_augmentation_ceiling_score": 30
+    }
+  }
+}

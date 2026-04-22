@@ -1,0 +1,31 @@
+{
+  "canonical_name": "Threat Intelligence Analyst",
+  "family": "blue_team",
+  "description": "Produces finished intelligence on threat actors, campaigns, and TTPs to inform defensive priorities and executive decision-making.",
+  "task_routineness_score": 35,
+  "data_dependency_score": 52,
+  "judgment_intensity_score": 74,
+  "social_adversarial_score": 55,
+  "tool_augmentation_ceiling_score": 45,
+  "high_risk_tasks": [
+    "IOC ingestion and deduplication",
+    "OSINT aggregation",
+    "Feed normalisation and STIX/TAXII formatting",
+    "Automated threat feed enrichment"
+  ],
+  "low_risk_tasks": [
+    "Strategic intelligence assessment",
+    "Attribution analysis",
+    "Finished intelligence report authorship",
+    "Threat actor profiling and campaign tracking",
+    "Intelligence requirements elicitation from stakeholders"
+  ],
+  "recommended_skills": [
+    "Adversarial AI and AI-enabled attack techniques",
+    "Geopolitical and nation-state threat analysis",
+    "Intelligence writing for executive audiences",
+    "Dark web and closed-source research",
+    "Structured analytic techniques (ACH, RADE)"
+  ],
+  "specialisations": ["nation_state", "cybercrime", "financial"]
+}

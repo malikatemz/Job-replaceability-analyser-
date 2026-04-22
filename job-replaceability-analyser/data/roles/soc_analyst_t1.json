@@ -1,0 +1,37 @@
+{
+  "canonical_name": "SOC Analyst Tier 1",
+  "family": "blue_team",
+  "description": "First-line security operations centre analyst. Monitors SIEM dashboards, triages alerts, escalates confirmed incidents to Tier 2.",
+  "task_routineness_score": 78,
+  "data_dependency_score": 82,
+  "judgment_intensity_score": 28,
+  "social_adversarial_score": 22,
+  "tool_augmentation_ceiling_score": 80,
+  "high_risk_tasks": [
+    "Alert triage and classification",
+    "Log parsing and correlation",
+    "Ticket creation and escalation",
+    "Shift handover reporting",
+    "Basic IOC lookups"
+  ],
+  "low_risk_tasks": [
+    "Novel attack pattern recognition",
+    "Analyst intuition on edge cases",
+    "Communication with business stakeholders"
+  ],
+  "recommended_skills": [
+    "Threat hunting",
+    "Malware analysis",
+    "Cloud security fundamentals",
+    "Human-AI SOC teaming",
+    "Incident response leadership"
+  ],
+  "specialisations": ["cloud", "ot", "financial"],
+  "specialisation_overrides": {
+    "ot": {
+      "task_routineness_score": 65,
+      "judgment_intensity_score": 45,
+      "tool_augmentation_ceiling_score": 55
+    }
+  }
+}

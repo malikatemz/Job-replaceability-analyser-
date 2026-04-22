@@ -1,0 +1,32 @@
+{
+  "canonical_name": "DevSecOps Engineer",
+  "family": "engineering",
+  "description": "Integrates security practices into DevOps pipelines. Owns SAST/DAST tooling, container security, secrets management, and developer security enablement.",
+  "task_routineness_score": 42,
+  "data_dependency_score": 55,
+  "judgment_intensity_score": 60,
+  "social_adversarial_score": 48,
+  "tool_augmentation_ceiling_score": 58,
+  "high_risk_tasks": [
+    "SAST/DAST finding triage",
+    "Dependency vulnerability scanning",
+    "Pipeline configuration from templates",
+    "Secrets scanning automation",
+    "Container image scanning"
+  ],
+  "low_risk_tasks": [
+    "Secure architecture design decisions",
+    "Developer security culture enablement",
+    "False positive adjudication at scale",
+    "Novel threat modelling for new services",
+    "Security tooling selection and integration"
+  ],
+  "recommended_skills": [
+    "AI-assisted secure code review",
+    "Supply chain security (SBOM, SLSA)",
+    "Policy-as-code (OPA, Sentinel)",
+    "Cloud-native security engineering",
+    "Platform engineering and developer experience"
+  ],
+  "specialisations": ["cloud", "kubernetes", "mobile"]
+}

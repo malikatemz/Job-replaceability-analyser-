@@ -1,0 +1,31 @@
+{
+  "canonical_name": "CISO",
+  "family": "leadership",
+  "description": "Chief Information Security Officer. Owns the organisation's security strategy, risk posture, board reporting, and security culture.",
+  "task_routineness_score": 14,
+  "data_dependency_score": 30,
+  "judgment_intensity_score": 92,
+  "social_adversarial_score": 88,
+  "tool_augmentation_ceiling_score": 20,
+  "high_risk_tasks": [
+    "Metrics dashboarding and KPI reporting",
+    "Budget modelling and vendor comparison",
+    "Compliance posture tracking"
+  ],
+  "low_risk_tasks": [
+    "Board and executive risk communication",
+    "Security culture leadership",
+    "Regulatory and legal judgment",
+    "Crisis communication during major incidents",
+    "Security strategy and programme design",
+    "M&A security due diligence"
+  ],
+  "recommended_skills": [
+    "AI governance and responsible AI frameworks",
+    "Cyber-physical risk (OT/ICS/IoT)",
+    "Supply chain security strategy",
+    "Privacy and data sovereignty",
+    "Geopolitical threat landscape literacy"
+  ],
+  "specialisations": []
+}
